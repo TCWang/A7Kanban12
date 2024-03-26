@@ -29,16 +29,20 @@
         <ul style="list-style: none" class="flex space-x-8">
           <li>
             <a
-              href="/sample"
+              href="/trail"
               class="active border-b-2 border-blue-500 pb-1 text-white"
               >登山步道</a
             >
           </li>
-          <li><a href="/" class="text-white">旅行導遊</a></li>
-          <li><a href="/" class="text-white">健身娛樂</a></li>
-          <li><a href="/" class="text-white">影視推薦</a></li>
-          <li><a href="/" class="text-white">健康指引</a></li>
-          <li><a href="/" class="text-white">地區醫療</a></li>
+          <li v-show="false">
+            <a href="/travel" class="text-white">旅行導遊</a>
+          </li>
+          <li><a href="/fitness" class="text-white">健身娛樂</a></li>
+          <li v-show="false">
+            <a href="/movie" class="text-white">影視推薦</a>
+          </li>
+          <li><a href="/health" class="text-white">健康指引</a></li>
+          <li><a href="/hospital" class="text-white">地區醫療</a></li>
           <li>
             <a
               href="/websites"
@@ -104,32 +108,35 @@
 
         <ul style="list-style: none" class="divide-y text-base">
           <li>
-            <a href="/" @click="isOpen = false" class="my-2 inline-block"
+            <a href="/trail" @click="isOpen = false" class="my-2 inline-block"
               >登山步道</a
             >
           </li>
-          <li>
-            <a href="/" @click="isOpen = false" class="my-2 inline-block"
+          <li v-show="false">
+            <a href="/travel" @click="isOpen = false" class="my-2 inline-block"
               >旅行導遊</a
             >
           </li>
           <li>
-            <a href="/" @click="isOpen = false" class="my-2 inline-block"
+            <a href="/fitness" @click="isOpen = false" class="my-2 inline-block"
               >健身娛樂</a
             >
           </li>
-          <li>
-            <a href="/" @click="isOpen = false" class="my-2 inline-block"
+          <li v-show="false">
+            <a href="/movie" @click="isOpen = false" class="my-2 inline-block"
               >影視推薦</a
             >
           </li>
           <li>
-            <a href="/" @click="isOpen = false" class="my-2 inline-block"
+            <a href="/health" @click="isOpen = false" class="my-2 inline-block"
               >健康指引</a
             >
           </li>
           <li>
-            <a href="/" @click="isOpen = false" class="my-2 inline-block"
+            <a
+              href="/hospital"
+              @click="isOpen = false"
+              class="my-2 inline-block"
               >地區醫療</a
             >
           </li>
