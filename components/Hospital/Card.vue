@@ -7,13 +7,8 @@
       <img
         :src="`images/hospital/${hospital.figureLogo}`"
         alt=""
-        class="ml-4 w-[80px] md:w-[120px] h-[100px] md:h-[120px] rounded-xl transform hover:scale-110 duration-200"
+        class="ml-4 w-[80px] md:w-[120px] h-[100px] md:h-[120px] rounded-xl transform hover:scale-110 duration-20"
       />
-      <!-- <NuxtImg
-        :src="`https://kgptltaqnkidtcqkathb.supabase.co/storage/v1/object/public/a7-images/shop/${hospital.figureLogo}`"
-        alt=""
-        class="ml-4 w-[80px] md:w-[120px] h-[100px] md:h-[120px] rounded-xl transform hover:scale-110 duration-200"
-      /> -->
 
       <div class="p-4 flex flex-col">
         <div>
