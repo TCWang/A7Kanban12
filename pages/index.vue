@@ -1,17 +1,38 @@
 <template>
   <div class="container">
-    <h1>A7新林口-社區網站: 12.健康休閒資訊平台</h1>
-    <ChartTest01 />
+    <NuxtErrorBoundary>
+      <!-- Groud Buying -->
+
+      <h1>A7新林口-社區網站: 12.健康休閒資訊平台</h1>
+      <WebCards />
+
+      <template #error="{ error }">
+        <div class="text-center mx-auto flex flex-col">
+          <h1 class="text-5xl text-red-600 mb-4">Sorry Something went wrong</h1>
+          <code>{{ error }}</code>
+          <button
+            class="text-white bg-blue-400 px-10 py-3 rounded mt-4"
+            @click="error.value = null"
+          >
+            Go Back
+          </button>
+        </div>
+      </template>
+    </NuxtErrorBoundary>
   </div>
 </template>
 
 <script setup>
+const route = useRoute();
+
 useHead({
-  title: "A7-12.健康休閒",
+  title: "社區網站-健康休閒",
   meta: [
     { name: "description", content: "A7新林口-社區網站: 12.健康休閒資訊平台 " },
   ],
 });
-</script>
 
-<style></style>
+definePageMeta({
+  layout: "default",
+});
+</script>

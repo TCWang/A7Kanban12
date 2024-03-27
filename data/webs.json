@@ -1,0 +1,62 @@
+﻿[
+        {
+            "name": "Heho 健康",
+            "id": "w001",
+            "web": "https://heho.com.tw/",
+            "figure": "w001-01.jpeg"
+        },
+        {
+            "name": "Heho 健康小幫手",
+            "id": "w002",
+            "web": "https://tools.heho.com.tw/",
+            "figure": "w002-01.jpeg"
+        },
+        {
+            "name": "Yahoo! 早安健康",
+            "id": "w003",
+            "web": "https://www.edh.tw/",
+            "figure": "w003-01.jpeg"
+        },
+        {
+            "name": "衛福部 健康九九",
+            "id": "w004",
+            "web": "https://health99.hpa.gov.tw/",
+            "figure": "w004-01.jpeg"
+        },
+        {
+            "name": "自由時報 自由健康網",
+            "id": "w005",
+            "web": "https://health.ltn.com.tw/",
+            "figure": "w005-01.jpeg"
+        },
+        {
+            "name": "健康2.0",
+            "id": "w006",
+            "web": "https://health.tvbs.com.tw/",
+            "figure": "w006-01.jpeg"
+        },
+        {
+            "name": "康健",
+            "id": "w007",
+            "web": "https://www.commonhealth.com.tw/",
+            "figure": "w007-01.jpeg"
+        },
+        {
+            "name": "健康醫療網",
+            "id": "w008",
+            "web": "https://www.healthnews.com.tw/",
+            "figure": "w008-01.jpeg"
+        },
+        {
+            "name": "Now 健康",
+            "id": "w009",
+            "web": "https://healthmedia.com.tw/",
+            "figure": "w009-01.jpeg"
+        },
+        {
+            "name": "Uho 優活健康",
+            "id": "w010",
+            "web": "https://www.uho.com.tw/",
+            "figure": "w010-01.jpeg"
+        }
+    ]
