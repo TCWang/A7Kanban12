@@ -5,7 +5,7 @@
   >
     <div class="flex flex-col h-full bg-zinc-100 rounded-2xl shadow-md">
       <img
-        :src="`images/hospital/${hospital.figureLogo}`"
+        :src="`../images/hospital/${hospital.figureLogo}`"
         alt=""
         class="ml-4 w-[80px] md:w-[120px] h-[100px] md:h-[120px] rounded-xl transform hover:scale-110 duration-200"
       />
