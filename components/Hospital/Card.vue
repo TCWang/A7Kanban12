@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex-row flex-wrap shadow border-hidden mb-1 cursor-pointer w-1/2 md:w-1/4 lg:1/6 h-[200px] md:h-[220px]"
-    @click="navigateTo(`/hospital/${hospital.name}`)"
+    @click="navigateTo(`hospital/${hospital.name}`)"
   >
     <div class="flex flex-col h-full bg-zinc-100 rounded-2xl shadow-md">
       <img
