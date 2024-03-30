@@ -2,9 +2,8 @@
   <section class="w-full max-w-6xl not-prose">
     <h2>登山步道</h2>
     <div class="column space-x-24 ml-6">
-      <div>類別</div>
+      <div>區域</div>
       <div>標題</div>
-      <div>日期</div>
     </div>
     <ul>
       <li style="list-style: none" v-for="post in posts" :key="post._path">
@@ -21,7 +20,6 @@
             {{ post.category }}
           </div>
           <div class="pl-6">{{ post.title }}</div>
-          <div class="pl-6">{{ post.fullDate }}</div>
         </NuxtLink>
       </li>
     </ul>
