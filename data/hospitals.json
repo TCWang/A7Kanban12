@@ -279,6 +279,19 @@
             "google": "https://www.google.com/maps/place/%E5%90%89%E6%80%9D%E7%89%99%E9%86%AB%E8%A8%BA%E6%89%80/@25.059431,121.3678632,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a70796452b45:0x5afceb8f1008e5e7!8m2!3d25.0594262!4d121.3704381!16s%2Fg%2F11h6gd34ks?hl=zh-TW&entry=ttu"
         },
         {
+            "name": "登仕美牙醫",
+            "id": "S6-023",
+            "type": "醫",
+            "address": "桃園市龜山區文化二路38-3號",
+            "telphone": "03-397-9961",
+            "hours": "週二-五 09:00 - 12:00, 14:00 - 17:30, 18:00 - 21:00, 週一 06:00 - 21:00, 週日公休",
+            "figure": "SHO-S6-023.jpeg",
+            "figureLogo": "SHO-S6-023L.jpeg",
+            "web": "https://www.dentco.tw/clinic/3732071754",
+            "category": "牙科",
+            "google": "https://www.google.com/maps/place/%E7%99%BB%E4%BB%95%E7%BE%8E%E7%89%99%E9%86%AB%E8%A8%BA%E6%89%80-%E6%A1%83%E5%9C%92%E7%89%99%E9%86%AB+%E6%9E%97%E5%8F%A3%E7%89%99%E9%86%AB+%E9%BE%9C%E5%B1%B1%E7%89%99%E9%86%AB+%E7%89%99%E5%A5%97+%E7%9F%AF%E6%AD%A3+3M%E6%B0%9F%E6%BC%86/@25.0589817,121.3627596,17z/data=!3m2!4b1!5s0x3442a736dc029dcf:0xe75dc58e04184938!4m6!3m5!1s0x3442a70047b68933:0xe7cc49a194b7f14b!8m2!3d25.0589769!4d121.3653399!16s%2Fg%2F11y4t986xh?authuser=0&hl=zh-TW&entry=ttu"
+        },
+        {
             "name": "晴光皮膚專科診所",
             "id": "S6-016",
             "type": "醫",
