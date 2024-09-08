@@ -34,7 +34,7 @@
               >登山步道</a
             >
           </li>
-          <li v-show="false">
+          <li v-show="true">
             <a href="/travel" class="text-white">旅行導遊</a>
           </li>
           <li><a href="/fitness" class="text-white">健身娛樂</a></li>
