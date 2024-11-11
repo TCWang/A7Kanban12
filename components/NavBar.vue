@@ -112,7 +112,7 @@
               >登山步道</a
             >
           </li>
-          <li v-show="false">
+          <li>
             <a href="/travel" @click="isOpen = false" class="my-2 inline-block"
               >旅行導遊</a
             >
