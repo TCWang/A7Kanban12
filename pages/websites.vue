@@ -24,7 +24,7 @@
       A7新林口-社區網站 V2.0
 
       <a href="https://a7kanban12.netlify.app/">
-        <NuxtImg src="images/web/w101-01.png" />
+        <NuxtImg src="/images/web/w101-01.png" />
       </a>
 
       <h2>網站架構</h2>
