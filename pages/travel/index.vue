@@ -1,66 +1,70 @@
 <template>
-  <section class="w-full max-w-6xl not-prose">
-    <h2>旅行導遊</h2>
-    <h3>相關網站</h3>
-
-    <nl>
-      <li>
-        <a href="https://tcwang.github.io/TravelGuide-Islands/Index.html"
-          >離島旅遊</a
-        >
-      </li>
-      <li>
-        <a href="https://tcwang.github.io/TravelGuide-EastCoast/index.html"
-          >花東旅遊</a
-        >
-      </li>
-
-      <li>
-        <a href="https://tcwang.github.io/TravelGuide-Taoyuan/index.html"
-          >桃園旅遊</a
-        >
-      </li>
-
-      <li>
-        <a href="https://tcwang.github.io/TravelGuide-TaiChung/index.html"
-          >台中旅遊</a
-        >
-      </li>
-
-      <li>
-        <a href="https://tcwang.github.io/TravelGuide-Tainan/index.html"
-          >台南旅遊</a
-        >
-      </li>
-    </nl>
-
-    <br />
-
-    <h3>旅遊筆記</h3>
-    <div class="column space-x-24 ml-6">
-      <div>類別</div>
-      <div>標題</div>
-      <div>日期</div>
-    </div>
-    <ul>
-      <li style="list-style: none" v-for="post in posts" :key="post._path">
-        <NuxtLink
-          :to="post._path"
-          class="column hover:bg-gray-100 dark:hover:bg-gray-800"
-        >
-          <div
-            :class="{
-              'text-white ': !post.displayCategory,
-              'text-gray-900': post.displayCategory,
-            }"
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
+    <div class="w-full">
+      <h2>旅遊筆記</h2>
+      <div class="column space-x-24 ml-6">
+        <div>類別</div>
+        <div>標題</div>
+        <div>日期</div>
+      </div>
+      <ul>
+        <li style="list-style: none" v-for="post in posts" :key="post._path">
+          <NuxtLink
+            :to="post._path"
+            class="column hover:bg-gray-100 dark:hover:bg-gray-800"
           >
-            {{ post.category }}
-          </div>
-          <div class="pl-6">{{ post.title }}</div>
-          <div class="pl-6">{{ post.fullDate }}</div>
-        </NuxtLink>
-      </li>
-    </ul>
+            <div
+              :class="{
+                'text-white ': !post.displayCategory,
+                'text-gray-900': post.displayCategory,
+              }"
+            >
+              {{ post.category }}
+            </div>
+            <div class="pl-6">{{ post.title }}</div>
+            <div class="pl-6">{{ post.fullDate }}</div>
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w-full">
+      <h2>旅行導遊</h2>
+      <h3>相關網站</h3>
+
+      <nl>
+        <li>
+          <a href="https://tcwang.github.io/TravelGuide-Islands/Index.html"
+            >離島旅遊</a
+          >
+        </li>
+        <li>
+          <a href="https://tcwang.github.io/TravelGuide-EastCoast/index.html"
+            >花東旅遊</a
+          >
+        </li>
+
+        <li>
+          <a href="https://tcwang.github.io/TravelGuide-Taoyuan/index.html"
+            >桃園旅遊</a
+          >
+        </li>
+
+        <li>
+          <a href="https://tcwang.github.io/TravelGuide-TaiChung/index.html"
+            >台中旅遊</a
+          >
+        </li>
+
+        <li>
+          <a href="https://tcwang.github.io/TravelGuide-Tainan/index.html"
+            >台南旅遊</a
+          >
+        </li>
+      </nl>
+
+      <br />
+    </div>
   </section>
 </template>
 
