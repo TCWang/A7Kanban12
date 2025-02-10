@@ -1,42 +1,52 @@
 <template>
-  <section class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
     <div class="w-full">
       <h2>蘇杭滬 旅遊導遊</h2>
 
-      <button
-        class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-200 text-white font-semibold rounded-lg hover:bg-blue-300 transition"
-      >
-        <a href="https://a7kanban12.netlify.app/travel/v027">旅遊準備</a>
-      </button>
-
-      <button
-        class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-200 text-white font-semibold rounded-lg hover:bg-blue-300 transition"
-      >
-        <a href="https://a7kanban12.netlify.app/travel/v022">行程規劃</a>
-      </button>
-      <button
-        class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-200 text-white font-semibold rounded-lg hover:bg-blue-300 transition"
-      >
-        <a href="https://a7kanban12.netlify.app/travel/v023">景點介紹</a>
-      </button>
-      <button
-        class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-200 text-white font-semibold rounded-lg hover:bg-blue-300 transition"
-      >
-        <a href="https://a7kanban12.netlify.app/travel/v024">旅館介紹</a>
-      </button>
-      <button
-        class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-200 text-white font-semibold rounded-lg hover:bg-blue-300 transition"
-      >
-        <a href="https://a7kanban12.netlify.app/travel/v025">餐館介紹</a>
-      </button>
-      <button
-        class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-200 text-white font-semibold rounded-lg hover:bg-blue-300 transition"
-      >
-        <a href="https://a7kanban12.netlify.app/travel/v026">交通規劃</a>
-      </button>
-
-      <br />
-
+      <a href="https://a7kanban12.netlify.app/travel/v027">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          旅遊準備
+        </button>
+      </a>
+      <a href="https://a7kanban12.netlify.app/travel/v022">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          行程規劃
+        </button>
+      </a>
+      <a href="https://a7kanban12.netlify.app/travel/v023">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          景點介紹
+        </button>
+      </a>
+      <a href="https://a7kanban12.netlify.app/travel/v024">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          旅館介紹
+        </button>
+      </a>
+      <a href="https://a7kanban12.netlify.app/travel/v025">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          餐館介紹
+        </button>
+      </a>
+      <a href="https://a7kanban12.netlify.app/travel/v026">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          交通規劃
+        </button>
+      </a>
+    </div>
+    <div class="w-full">
       <h2>旅行導遊</h2>
       <h3>相關網站</h3>
 
@@ -70,38 +80,35 @@
           >
         </li>
       </nl>
-
-      <br />
     </div>
-
-    <div class="w-full">
-      <h2>旅遊筆記</h2>
-      <div class="column space-x-24 ml-6">
-        <div>類別</div>
-        <div>標題</div>
-        <div>日期</div>
-      </div>
-      <ul>
-        <li style="list-style: none" v-for="post in posts" :key="post._path">
-          <NuxtLink
-            :to="post._path"
-            class="column hover:bg-gray-100 dark:hover:bg-gray-800"
+  </div>
+  <div class="w-full">
+    <h2>旅遊筆記</h2>
+    <div class="column space-x-24 ml-6">
+      <div>類別</div>
+      <div>標題</div>
+      <div>日期</div>
+    </div>
+    <ul>
+      <li style="list-style: none" v-for="post in posts" :key="post._path">
+        <NuxtLink
+          :to="post._path"
+          class="column hover:bg-gray-100 dark:hover:bg-gray-800"
+        >
+          <div
+            :class="{
+              'text-white ': !post.displayCategory,
+              'text-gray-900': post.displayCategory,
+            }"
           >
-            <div
-              :class="{
-                'text-white ': !post.displayCategory,
-                'text-gray-900': post.displayCategory,
-              }"
-            >
-              {{ post.category }}
-            </div>
-            <div class="pl-6">{{ post.title }}</div>
-            <div class="pl-6">{{ post.fullDate }}</div>
-          </NuxtLink>
-        </li>
-      </ul>
-    </div>
-  </section>
+            {{ post.category }}
+          </div>
+          <div class="pl-6">{{ post.title }}</div>
+          <div class="pl-6">{{ post.fullDate }}</div>
+        </NuxtLink>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script setup>
