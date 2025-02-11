@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
-    <div class="w-full">
+    <div class="w-full my-2">
       <h2>蘇杭滬 旅遊導遊</h2>
 
       <a href="https://a7kanban12.netlify.app/travel/v027">
@@ -46,40 +46,44 @@
         </button>
       </a>
     </div>
-    <div class="w-full">
-      <h2>旅行導遊</h2>
-      <h3>相關網站</h3>
+    <div class="w-full my-2">
+      <h2>台灣 旅行導遊</h2>
 
-      <nl>
-        <li>
-          <a href="https://tcwang.github.io/TravelGuide-Islands/Index.html"
-            >離島旅遊</a
-          >
-        </li>
-        <li>
-          <a href="https://tcwang.github.io/TravelGuide-EastCoast/index.html"
-            >花東旅遊</a
-          >
-        </li>
-
-        <li>
-          <a href="https://tcwang.github.io/TravelGuide-Taoyuan/index.html"
-            >桃園旅遊</a
-          >
-        </li>
-
-        <li>
-          <a href="https://tcwang.github.io/TravelGuide-TaiChung/index.html"
-            >台中旅遊</a
-          >
-        </li>
-
-        <li>
-          <a href="https://tcwang.github.io/TravelGuide-Tainan/index.html"
-            >台南旅遊</a
-          >
-        </li>
-      </nl>
+      <a href="https://tcwang.github.io/TravelGuide-Islands/Index.html">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          離島旅遊
+        </button>
+      </a>
+      <a href="https://tcwang.github.io/TravelGuide-EastCoast/index.html">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          花東旅遊
+        </button>
+      </a>
+      <a href="https://tcwang.github.io/TravelGuide-Taoyuan/index.html">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          桃園旅遊
+        </button>
+      </a>
+      <a href="https://tcwang.github.io/TravelGuide-TaiChung/index.html">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          台中旅遊
+        </button>
+      </a>
+      <a href="https://tcwang.github.io/TravelGuide-Tainan/index.html">
+        <button
+          class="w-1/2 border-2 border-blue-600 px-4 py-2 bg-blue-300 text-white font-semibold rounded-lg hover:bg-blue-500 transition"
+        >
+          台南旅遊
+        </button>
+      </a>
     </div>
   </div>
   <div class="w-full">
